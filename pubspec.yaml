@@ -1,0 +1,43 @@
+name: tarae
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0-323.0.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.7
+  kakao_flutter_sdk_user: ^1.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+  flutter_lints: ^5.0.0
+  
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/appIcon.png"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "assets/icons/loginIcon.png"
+  android: true
+  ios: true
+  android_12:
+    color: "#FFFFFF"
+    image: "assets/icons/loginIcon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+
+  
