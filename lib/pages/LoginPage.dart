@@ -11,7 +11,7 @@ class LoginPage extends StatelessWidget {
     try {
       OAuthToken token;
 
-      // 카카오톡이 설치되어 있는지 확인 후 로그인 분기
+      // 카카오톡이 설치되어 있는지 확인 후 로그인
       if (await isKakaoTalkInstalled()) {
         token = await UserApi.instance.loginWithKakaoTalk();
         print('카카오톡으로 로그인 성공: ${token.accessToken}');
@@ -24,7 +24,6 @@ class LoginPage extends StatelessWidget {
       User user = await UserApi.instance.me();
       print('사용자 전체 정보: ${jsonEncode(user)}');
 
-      // 추가 동의 필요한 경우
       if (user.kakaoAccount?.profileNicknameNeedsAgreement == true ||
           user.kakaoAccount?.profileImageNeedsAgreement == true) {
         await UserApi.instance.loginWithNewScopes(['profile_nickname', 'profile_image']);
