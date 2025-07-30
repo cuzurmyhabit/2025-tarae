@@ -160,7 +160,7 @@ class _LocationSearchPageState extends State<LocationSearchPage> {
       width: double.infinity,
       height: 48,
       child: ElevatedButton(
-        onPressed: () => _handlePlaceSelection(place, controller),
+        onPressed: () => Navigator.pushNamed(context, '/innerMap'),
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xFF5B7EFF),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
