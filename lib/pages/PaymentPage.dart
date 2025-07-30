@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../widgets/next_button.dart';
+import '../widgets/NextButton.dart';
 import '../pages/LocationSearchPage.dart';
 
 class PaymentPage extends StatefulWidget {
