@@ -6,11 +6,11 @@ class NextButton extends StatelessWidget {
   final String text;
 
   const NextButton({
-    Key? key,
+    super.key,
     required this.isEnabled,
     this.onPressed,
     this.text = '다음',
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
