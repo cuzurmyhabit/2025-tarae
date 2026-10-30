@@ -43,3 +43,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local environment files (mobile SDK identifiers are public, not server secrets)
+.env
+.env.*
+!.env.example
